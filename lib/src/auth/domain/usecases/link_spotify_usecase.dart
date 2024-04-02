@@ -9,6 +9,6 @@ class GetSpotifyAuthUsecase extends UsecaseWithoutParams<void>{
   final AuthRepo _repo;
 
   @override
-  ResultFuture<void> call() async => _repo.getSpotifyAuth();
+  ResultFuture<bool> call() async => _repo.getSpotifyAuth();
 
 }
